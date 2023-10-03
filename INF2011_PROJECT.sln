@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INF2011 PROJECT", "INF2011 PROJECT\INF2011 PROJECT.csproj", "{FABD7361-3AF3-4E93-854D-35DDBE89C7CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PRESENTATION", "PRESENTATION", "{A5376405-410B-4AC9-98A8-A64DFC6F0B8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUSINESS", "BUSINESS", "{33F487D5-FFFB-4272-96B8-DE1956A7CEC8}"
+	ProjectSection(SolutionItems) = preProject
+		Guest.cs = Guest.cs
+		RegularGuest.cs = RegularGuest.cs
+		status.cs = status.cs
+		VIP.cs = VIP.cs
+		VVIP.cs = VVIP.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DATABASE", "DATABASE", "{01DE97DC-54CB-4BCF-A155-DE9BCB7559DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6181CACC-9911-4EF5-BC63-F42FDEEC255D}"
+	ProjectSection(SolutionItems) = preProject
+		Test.cs = Test.cs
+		Person.cs = Person.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FABD7361-3AF3-4E93-854D-35DDBE89C7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABD7361-3AF3-4E93-854D-35DDBE89C7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABD7361-3AF3-4E93-854D-35DDBE89C7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABD7361-3AF3-4E93-854D-35DDBE89C7CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66E3CB85-502F-4300-A5F5-CCB17F649198}
+	EndGlobalSection
+EndGlobal
