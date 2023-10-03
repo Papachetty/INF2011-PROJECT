@@ -51,7 +51,7 @@ namespace INF2011_PROJECT.Business
          * We assume until a role is assigned to an employee, they have no role
          */
 
-        public Role()
+        public statsus()
         {
             roleVal = status.StatusType.NoStatus;
             description = "No role";
