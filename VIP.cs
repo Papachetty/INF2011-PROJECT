@@ -10,45 +10,41 @@ namespace INF2011_PROJECT.Business
     {
         #region Data Member
         //encapsulation
-        private decimaclassl tips, rate;
-        private int NumberOfShifts;
-        #endregion
+        private int security;
+    private decimal discount;
+    #endregion
 
-        #region Property Methods
-        public decimal getTips
-        {
-            get { return tips; }
-            set { tips = value; }
-        }
+    #region Property Methods
+    public int getSecurity 
+    {
+        get { return security; }
+        set { security = value; }
+            
+    }
 
-        public decimal getRate
-        {
-            get { return rate; }
-            set { rate = value; }
+    public decimal getDiscount
+    {
+        get { return discount; }
+        set { discount = value; }
 
-        }
-        public int getShifts
-        {
-            get { return NumberOfShifts; }
-            set { NumberOfShifts = value; }
-        }
-        #endregion
+    }
 
-        #region Constructors
-        public Waiter() : base()
+    #region Constructors
+    public VIP() : base()
         {
-            getRoleValue = RoleType.Waiter;
-            description = "Waiter";
-            getShifts = 0;
-            rate = 0;
+            getStatusValue = statusType.VIP;
+            description = "VIP";
+            discount = 0.1;
+            security=2
+            
         }
         #endregion
 
         #region Methods
         public override decimal Payment()
         {
-            //Will be calculated when shifts are available
-            return rate * getShifts + tips;
+        //Will be calculated when shifts are available
+        return 5000;
         }
 
         #endregion

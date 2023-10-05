@@ -25,7 +25,7 @@ public  class Person
     #endregion
 
     #region Property methods
-    public int ID
+    public string ID
 	{ 
 	get { return id; }
 	set { id = value; }
@@ -44,7 +44,7 @@ public  class Person
 	#endregion
 
 	#region toString
-	public string toString() 
+	public override string toString() 
 	{ 
 	return this.name +"'s Phone number is "+ this.phoneNumber;
 	
