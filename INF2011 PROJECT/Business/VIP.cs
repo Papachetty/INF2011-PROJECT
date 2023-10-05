@@ -8,9 +8,9 @@ namespace INF2011_PROJECT.Business
 {
     public  VIP : status
     {
-        #region Data Member
-        //encapsulation
-        private int security;
+
+    #region Data Member
+    private int security;
     private decimal discount;
     #endregion
 
@@ -28,26 +28,26 @@ namespace INF2011_PROJECT.Business
         set { discount = value; }
 
     }
+    #endregion
 
     #region Constructors
     public VIP() : base()
-        {
+    {
             getStatusValue = statusType.VIP;
             description = "VIP";
             discount = 0.1;
             security=2
             
-        }
-        #endregion
-
-        #region Methods
-        public override decimal Payment()
-        {
-        //Will be calculated when shifts are available
-        return 5000;
-        }
-
-        #endregion
     }
-}
+    #endregion
+
+    #region Methods
+    public override decimal Payment()
+    {
+    //Will be calculated when shifts are available
+    return 5000;
+    }
+    #endregion
+
+    }
 }
