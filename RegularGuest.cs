@@ -6,20 +6,33 @@ using System.Threading.Tasks;
 
 namespace IN2011_PROJECT.Business
 {
-    public class Runner : Role
+    public class RegularGuest : Status
     {
         #region Data Member
         //encapsulation
-        private decimal tips, rate;
-        private int NumberOfShifts;
+        private string welcomeGift;
         #endregion
 
         #region Property Methods
-        public decimal getTips
+        public string welcomeGift
         {
-            get { return tips; }
-            set { tips = value; }
-        }
+            get { return welcomeGift; }
+            set { welcomeGift = value; }
 
-        public decimal getRate
+        }
+        #endregion
+
+        #region Constructors
+        public VIP() : base()
         {
+            getStatusValue = statusType.RegularGuest;
+            description = "RegularGuest";
+            welcomeGift="Sweet"
+    
+
+        }
+        #endregion
+
+    }
+
+}

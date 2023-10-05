@@ -44,7 +44,7 @@ public  class Person
 	#endregion
 
 	#region toString
-	public string toString() 
+	public override string toString() 
 	{ 
 	return this.name +"'s Phone number is "+ this.phoneNumber;
 	

@@ -10,31 +10,48 @@ namespace INF2011_PROJECT.Business
     {
         #region Data Member
         //encapsulation
-        private decimal salary;
+        private string specialEvents,view;
+        private int police
         #endregion
 
         #region Property Methods
-        public decimal SalaryAmount
+
+        public string getSpecialEvents
         {
-            get { return salary; }
-            set { salary = value; }
+            get { return specialEvents; }
+            set { specialEvents = value; }
         }
+
+        public string getView
+        {
+            get { return view; }
+            set { view = value; }
+        }
+
+        public int getPolice
+        {
+            get { return police; }
+            set { police = value; }
+        }
+
         #endregion
 
         #region Constructor
-        public HeadWaiter() : base()
+        public VVIP() : base()
         {
-            getRoleValue = RoleType.Headwaiter;
-            description = "Headwaiter";
-            salary = 0;
+            getStatusValue = StatusType.VVIP;
+            description = "VVIP";
+            specialEvents ="Guest Welcome Event, Celebrity singer Event, Games night, proudly south African Dance night"
+            police= 2;//2 bodyguards per VVIP
+            view = "Bestview";
         }
         #endregion
 
         #region Methods
         public override decimal Payment()
         {
-            //Will be calculated when shifts are available
-            return salary;
+            //cost per VVIP person
+            return 11000;
         }
         #endregion
     }

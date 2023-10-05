@@ -47,13 +47,13 @@ namespace INF2011_PROJECT.Business
 
         #region Constructor
         /*Include a default constructor to initialise the values: 
-         * Initialise the role ID (roleval) and the role description to no role. 
+         * Initialise the StatusValue and the status description to no role. 
          * We assume until a role is assigned to an employee, they have no role
          */
 
-        public statsus()
+        public Status()
         {
-            roleVal = status.StatusType.NoStatus;
+            statusValue = status.StatusType.NoStatus;
             description = "No role";
         }
         #endregion
