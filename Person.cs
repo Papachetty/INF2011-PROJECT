@@ -25,7 +25,7 @@ public  class Person
     #endregion
 
     #region Property methods
-    public int ID
+    public string ID
 	{ 
 	get { return id; }
 	set { id = value; }
